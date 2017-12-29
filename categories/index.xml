@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo Casper Two</title>
+    <link>https://eueung.github.io/hugo-casper-two/categories/</link>
+    <description>Recent content in Categories on Hugo Casper Two</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Released under the MIT license.</copyright>
+    
+	<atom:link href="https://eueung.github.io/hugo-casper-two/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://eueung.github.io/hugo-casper-two/categories/development/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://eueung.github.io/hugo-casper-two/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>https://eueung.github.io/hugo-casper-two/categories/food/</link>
+      <pubDate>Sat, 28 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://eueung.github.io/hugo-casper-two/categories/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://eueung.github.io/hugo-casper-two/categories/golang/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://eueung.github.io/hugo-casper-two/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
