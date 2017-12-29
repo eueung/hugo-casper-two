@@ -1,0 +1,34 @@
+{{ partial "head" . }}
+
+<body class="home-template"><div class="site-wrapper"> 
+
+{{ partial "header" . }}
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <div class="post-feed">
+      
+<article class="post-card post"> 
+    <a class="post-card-image-link" href="{{ .Permalink }}">
+      <div class="post-card-image" style="background-image: url(/defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
+    </a>    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="#">
+          <header class="post-card-header">
+              <h2 class="post-card-title">{{ .Site.Params.pageNotFoundTitle }}</h2>
+          </header>
+      </a>
+      <section class="post-card-excerpt" style="padding: 0 25px;">
+          
+      </section>
+
+    </div>
+</article>    
+
+    </div>
+  </div>
+</main>
+
+{{ partial "footer" . }}
+</div>{{ partial "js" . }}</body></html>

@@ -1,0 +1,27 @@
+{{ partial "head" . }}
+
+<body class="ctsingle"><div class="site-wrapper"> 
+
+{{ partial "header" . }}
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <div class="post-feed">
+      {{ partial "post-single" . }}
+    </div>
+
+    <nav class="pagination" role="navigation">
+      {{if .NextInSection}}
+          <a class="newer-posts" href="{{ .NextInSection.RelPermalink }}">&larr; Next Post</a>
+      {{end}}
+      <span class="page-number">&nbsp;</span>
+      {{if .PrevInSection}}
+          <a class="older-posts" href="{{ .PrevInSection.RelPermalink }}">Previous Post &rarr;</a>
+      {{end}}
+    </nav>
+    {{ partial "disqus" . }}
+  </div>
+</main>
+
+{{ partial "footer" . }}
+</div>{{ partial "js" . }}</body></html>
