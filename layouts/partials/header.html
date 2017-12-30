@@ -1,8 +1,8 @@
-<header class="site-header outer " {{if .Site.Params.cover}} style="background-image: url({{.Site.Params.cover | relURL}})" {{end}} >
+<header class="site-header outer " {{if .Site.Params.cover}} style="background-image: url({{.Site.Params.cover | absURL}})" {{end}} >
   <div class="inner">
     <div class="site-header-content">
       <h1 class="site-title">{{ if .Site.Params.logo }}
-        <img class="site-logo" src="{{ .Site.Params.logo  | relURL}}" alt="{{ .Site.Params.title }}" />
+        <img class="site-logo" src="{{ .Site.Params.logo  | absURL}}" alt="{{ .Site.Params.title }}" />
       {{else}} {{ .Site.Params.title }} {{end}} </h1>
         <h2 class="site-description">{{ .Site.Params.subtitle }} </h2>
     </div>
@@ -29,7 +29,7 @@
         {{ if .Site.Params.RSSLink}}
         <a class="subscribe-button" href="{{.Site.Params.RSSLink }}">Subscribe</a> </div>
         {{else}}
-        <a class="subscribe-button" href="{{if .IsNode}}{{.RSSLink}}{{else}}{{"index.xml" | relURL}}{{end}}">Subscribe</a>
+        <a class="subscribe-button" href="{{if .IsNode}}{{.RSSLink}}{{else}}{{"index.xml" | absURL}}{{end}}">Subscribe</a>
         {{end}}    
       </div>
 

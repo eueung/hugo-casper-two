@@ -12,6 +12,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="{{ .Site.Params.description }}" />
 {{ end }}{{if .Params.image }}
-    <meta property="og:image" content="{{ .Params.image | relURL}}"/>
+    <meta property="og:image" content="{{ .Params.image | absURL}}"/>
 {{else}}{{if .Site.Params.cover}}
-    <meta property="og:image" content="{{ .Site.Params.cover | relURL}}"/>{{end}}{{end}}
+    <meta property="og:image" content="{{ .Site.Params.cover | absURL}}"/>{{end}}{{end}}

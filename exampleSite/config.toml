@@ -4,6 +4,7 @@ languageCode    = "en-US"
 disqusShortname = ""
 paginate        = 6
 #SectionPagesMenu = "main"
+canonifyurls    = true
 
 [params]
   title       = "Hugo Casper Two"
