@@ -12,11 +12,11 @@
 
     <nav class="pagination" role="navigation">
       {{if .Paginator.HasPrev}}
-          <a class="newer-posts" href="{{ .Paginator.Prev.URL }}">&larr; Next Posts</a>
+          <a class="newer-posts" href="{{ .Paginator.Prev.URL }}">&larr; <span class="hide">Next Posts</span></a>
       {{end}}
-      <span class="page-number">Page {{ .Paginator.PageNumber }} of {{.Paginator.TotalPages}}</span>
+      <span class="page-number"><span class="hide">Page {{ .Paginator.PageNumber }} of {{.Paginator.TotalPages}}</span>&nbsp;</span>
       {{if .Paginator.HasNext}}
-          <a class="older-posts" href="{{ .Paginator.Next.URL }}">Previous Posts &rarr;</a>
+          <a class="older-posts" href="{{ .Paginator.Next.URL }}"><span class="hide">Previous Posts</span> &rarr;</a>
       {{end}}
     </nav>
   </div>
