@@ -9,7 +9,7 @@ canonifyurls    = true
 [params]
   title       = "Hugo Casper Two"
   subtitle    = "Port of Casper 2.x for Hugo"
-  copyright   = "Released under the MIT license."
+  copyright   = "© 2018"
 
   cover       = "img/blog-cover.jpg"
   description = "Here is a description of your site."
@@ -35,6 +35,9 @@ canonifyurls    = true
 
   pageNotFoundTitle = "404 - Page not found"
 
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
 [permalinks]
   post = "/post/:slug/"
 
@@ -49,8 +52,8 @@ canonifyurls    = true
   weight = 100
 
 [[menu.main]]
-  name = "Food"
-  url = "/categories/food/"
+  name = "Categories"
+  url = "/categories/"
   weight = 99
 
 [[menu.main]]

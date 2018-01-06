@@ -1,19 +1,19 @@
 # Casper Two
 
-[Casper Two](https://github.com/eueung/hugo-casper-two) is a port of the [Casper](https://github.com/TryGhost/Casper), the default personal blogging theme for Ghost. While a legacy version (v1.x) has [already been ported](https://github.com/vjeantet/hugo-theme-casper) to Hugo years ago, it is incompatible with the recent 2.x version. So I ended up porting this new Casper version. It is currently functional, but not covered all page templates yet. They may be added in the future updates.
+[Casper Two](https://github.com/eueung/hugo-casper-two) is a port of the [Casper](https://github.com/TryGhost/Casper), the default personal blogging theme for Ghost. While a legacy version (v1.x) has [already been ported](https://github.com/vjeantet/hugo-theme-casper) to Hugo years ago, it is incompatible with the recent 2.x version. So I ended up porting this new Casper version. 
 
 ![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/screenshot.png)
 
 ## Theme Demo
 
-- [Sample Site](//eueung.github.io/hugo-casper-two/)
+- [Sample Site](//eueung.github.io/hugo-casper-new/)
 
 ## Installation
 
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/eueung/hugo-casper-two.git casper-two
+    $ git clone https://github.com/eueung/hugo-casper-new.git casper-new
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -57,6 +57,9 @@ paginate        = 6
 
   pageNotFoundTitle = "404 - Page not found"
 
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
 [permalinks]
   post = "/:slug/"
 
@@ -83,6 +86,7 @@ paginate        = 6
 
 Sample content structure is given in the `exampleSite` folder. Have fun!
 
+![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/single.jpg)
 
 ## License
 

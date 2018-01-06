@@ -70,3 +70,7 @@
         text-align: center;
     }
 }
+
+.post-full-content pre code {
+    color: #e5eff5;
+}    
