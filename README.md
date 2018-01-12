@@ -86,7 +86,8 @@ paginate        = 6
 
 Sample content structure is given in the `exampleSite` folder. Have fun!
 
-![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/single.jpg)
+![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/telematika1.jpg)
+![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/telematika2.jpg)
 
 ## License
 
