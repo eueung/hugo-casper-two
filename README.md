@@ -14,7 +14,7 @@
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/eueung/hugo-casper-new.git casper-new
+    $ git clone https://github.com/eueung/hugo-casper-two.git casper-two
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
