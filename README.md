@@ -6,7 +6,8 @@
 
 ## Theme Demo
 
-- [Sample Site](//eueung.github.io/hugo-casper-new/)
+- [telematika.org](https://telematika.org/)
+- sample site - [github pages](https://eueung.github.io/hugo-casper-new/)
 
 ## Installation
 
