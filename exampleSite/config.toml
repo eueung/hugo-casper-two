@@ -21,6 +21,8 @@ canonifyurls    = true
   twitterName = "faketryghost"
   fbName = "fakeghost"
   githubName = "eueung"
+  linkedinName = "eueung"
+  mediumName = ""
 
   logo = "hugo-logo.png"
   orgName = "EM"
