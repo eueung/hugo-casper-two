@@ -28,7 +28,7 @@
         </div>  
         {{ if .Site.Params.RSSLink}}
         <a class="subscribe-button" href="{{.Site.Params.RSSLink }}">Subscribe</a> </div>
-        {{else}}
+        {{else if .Site.Params.showSubscribe}}
         <a class="subscribe-button" href="{{if .IsNode}}{{.RSSLink}}{{else}}{{"index.xml" | absURL}}{{end}}">Subscribe</a>
         {{end}}    
       </div>
