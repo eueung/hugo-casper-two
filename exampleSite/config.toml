@@ -29,6 +29,8 @@ canonifyurls    = true
   orgWebsite = "https://www.telematika.org"
   orgDescription = "Here is a description placeholder for your org"
 
+  showSupport = true
+
   author = "EM"
   authorAvatar = "img/ghost-icon.png"
   authorLocation = "Bandung, ID"
