@@ -21,11 +21,15 @@ canonifyurls    = true
   twitterName = "faketryghost"
   fbName = "fakeghost"
   githubName = "eueung"
+  linkedinName = "eueung"
+  mediumName = ""
 
   logo = "hugo-logo.png"
   orgName = "EM"
   orgWebsite = "https://www.telematika.org"
   orgDescription = "Here is a description placeholder for your org"
+
+  showSupport = true
 
   author = "EM"
   authorAvatar = "img/ghost-icon.png"
