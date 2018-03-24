@@ -9,7 +9,8 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{ "favicon.ico" | absURL}}" />
+    <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL}}">
+	  <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | absURL}}" />
     <link rel="canonical" href="{{ .Permalink }}" />
 
     {{ if .IsPage }} <meta name="description" content="{{ .Description | default (substr .Summary 0 160) }}" /> {{ else }}
