@@ -2,7 +2,7 @@
   <div class="inner">
     <nav class="site-nav">
       <div class="site-nav-left">{{ if .Site.Params.logo }}
-        <a class="site-nav-logo" href="#"><img src="{{ .Site.Params.logo  | absURL}}" alt="{{ .Site.Params.Title }}" /></a>{{end}}
+        <a class="site-nav-logo" href="/"><img src="{{ .Site.Params.logo  | absURL}}" alt="{{ .Site.Params.Title }}" /></a>{{end}}
 
         <ul class="nav" role="menu">
         {{ $currentNode := . }}
