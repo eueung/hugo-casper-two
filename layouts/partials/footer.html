@@ -1,7 +1,7 @@
 <footer class="site-footer outer">
   <div class="site-footer-content inner">
     <section class="copyright" style="line-height: 1.3em;">
-      <a href="/">{{.Site.Params.orgName}}</a> {{.Site.Params.copyright}} <br>
+      © <a href="/">{{.Site.Params.orgName}}</a> {{.Site.Params.copyright | safeHTML}} <br>
       {{with .Site.Params.showSupport}}<span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>{{end}}
     </section>
     <nav class="site-footer-nav">
