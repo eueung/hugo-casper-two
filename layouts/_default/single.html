@@ -1,15 +1,15 @@
 {{ partial "head" . }}
 
-{{if ne .Site.Params.singleViewStyle "casper"}}<body class="ctsingle">
+{{if ne (.Site.Params.singleViewStyle | default "casper") "casper"}}<body class="ctsingle">
 {{else}}<body class="post-template">{{end}}
-  <div class="site-wrapper"> 
+  <div class="site-wrapper">
 
-{{if ne .Site.Params.singleViewStyle "casper"}}{{ partial "header" . }}
+{{if ne (.Site.Params.singleViewStyle | default "casper") "casper"}}{{ partial "header" . }}
 {{else}}{{ partial "header-sori" . }}{{end}}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
-    {{if ne .Site.Params.singleViewStyle "casper"}}
+    {{if ne (.Site.Params.singleViewStyle | default "casper") "casper"}}
     <div class="post-feed">
       {{ partial "post-single" . }}
     </div>
@@ -27,15 +27,15 @@
     {{else}}
       {{ partial "post-single-sori" . }}
     {{end}}
-    
+
     {{ partial "disqus" . }}
   </div>
 </main>
 
-{{if eq .Site.Params.singleViewStyle "casper"}}
+{{if eq (.Site.Params.singleViewStyle | default "casper") "casper"}}
 <aside class="read-next outer">
   <div class="inner">
-    <div class="read-next-feed">      
+    <div class="read-next-feed">
       {{ partial "readnext-random-sori" . }}
       {{with .NextInSection}}
       {{ partial "readnext-article-sori" . }}
@@ -53,5 +53,5 @@
 {{ partial "footer" . }}
 </div>
 {{ partial "js" . }}
-{{if eq .Site.Params.singleViewStyle "casper"}}{{ partial "js-sori" . }}{{end}}
+{{if eq (.Site.Params.singleViewStyle | default "casper") "casper"}}{{ partial "js-sori" . }}{{end}}
 </body></html>

@@ -1,4 +1,4 @@
-<article class="post-card post"> 
+<article class="post-card post">
     {{if .Params.image}}
     <a class="post-card-image-link" href="{{ .Permalink }}">
       <div class="post-card-image" style="background-image: url({{.Params.image | absURL}})"></div>
@@ -6,7 +6,7 @@
     {{else}}
     <a class="post-card-image-link" href="{{ .Permalink }}">
       <div class="post-card-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
-    </a>    
+    </a>
     {{end}}
 
     <div class="post-card-content">
@@ -23,7 +23,7 @@
       </section>
 
       <footer class="post-card-meta">
-          <img class="author-profile-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar) | absURL}}" alt="Author" />
+          <img class="author-profile-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar | default "img/ghost-icon.png") | absURL}}" alt="Author" />
           <span class="post-card-author"><a href="/">{{.Params.author | default .Site.Params.author}}</a></span>
       </footer>
     </div>

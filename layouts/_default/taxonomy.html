@@ -1,6 +1,6 @@
 {{ partial "head" . }}
 
-{{if eq .Site.Params.singleViewStyle "casper"}}
+{{if eq (.Site.Params.singleViewStyle | default "casper") "casper"}}
   <body class="tag-template"><div class="site-wrapper">
   {{ partial "header-sori-tag" . }}
 {{else}}

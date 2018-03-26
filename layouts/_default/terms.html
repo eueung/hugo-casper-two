@@ -1,6 +1,6 @@
 {{ partial "head" . }}
 
-{{if eq .Site.Params.singleViewStyle "casper"}}
+{{if eq (.Site.Params.singleViewStyle | default "casper") "casper"}}
   <body class="tag-template"><div class="site-wrapper">
   {{ partial "header-sori-term" . }}
 {{else}}
@@ -10,7 +10,7 @@
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
-    {{if ne .Site.Params.singleViewStyle "casper"}}
+    {{if ne (.Site.Params.singleViewStyle | default "casper") "casper"}}
     <div class="post-feed">
       {{ partial "post-list" . }}
     </div>
@@ -27,7 +27,7 @@
     {{else}}
     <div class="post-feed">
       {{ partial "post-list-term" . }}
-    </div>   
+    </div>
     {{end}}
   </div>
 </main>
