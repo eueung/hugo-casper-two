@@ -1,4 +1,4 @@
-{{ $pages := ((where .Site.Pages "Type" "post") | shuffle) }}
+{{ $pages := ((where .Site.Pages "Params.layout" "post") | shuffle) }}
 {{ range first 3 $pages}} 
 
 <article class="post-card post"> 
@@ -9,7 +9,7 @@
     {{else}}
     <a class="post-card-image-link" href="{{ .Permalink }}">
       <div class="post-card-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
-    </a>    
+    </a>
     {{end}}
 
     <div class="post-card-content">
