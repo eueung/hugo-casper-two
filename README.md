@@ -38,6 +38,7 @@ paginate        = 6
   description = "Here is a description of your site."
   metaDescription = ""
   googleAnalytics = ""
+  googleTagManager = ""
   customCSS = []
   RSSLink = ""
 
