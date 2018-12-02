@@ -2,6 +2,11 @@
     <header class="post-full-header">
         <h1 class="post-full-title">{{.Title | title}}</h1>
     </header>
+    {{if .Params.image}}
+    <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
+    </figure>{{else}}
+    <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
+    </figure>{{end}}
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
