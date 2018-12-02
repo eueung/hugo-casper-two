@@ -28,7 +28,7 @@
 
       <footer class="post-card-meta">
           <img class="author-profile-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar) | absURL}}" alt="Author" />
-          <span class="post-card-author"><a href="/">{{.Params.author | default .Site.Params.author}}</a></span>
+          <span class="post-card-author"><a href="{{ (.Params.authorURLInternal | default .Site.Params.authorURLInternal) | absURL}}">{{.Params.author | default .Site.Params.author}}</a></span>
       </footer>
     </div>
 </article>
