@@ -1,4 +1,4 @@
-{{ $pages := ((where .Site.Pages "Type" "post") | shuffle) }}
+{{ $pages := ((where (where .Site.Pages "Type" "post") ".Params.image" "!=" nil) | shuffle) }}
 {{ range first 3 $pages}} 
 
 <article class="post-card post"> 

@@ -1,15 +1,21 @@
-name = "Casper Two"
+name = "Casper Two point 5"
 license = "MIT"
-licenselink = "https://github.com/eueung/hugo-casper-two/blob/master/LICENSE.md"
-description = "Port of Casper 2.x from Ghost Foundation"
-homepage = "https://github.com/eueung/hugo-casper-two"
+licenselink = "https://github.com/jbrosi/hugo-casper-two/blob/master/LICENSE.md"
+description = "Modified Port of Casper 2.x from Ghost Foundation"
+homepage = "https://github.com/jbrosi/hugo-casper-two"
 tags = ["blog","pages","ghost theme"]
 features = ["disqus", "google analytics"]
 min_version=0.31
 
 [author]
+  name = "Johannes Brosi"
+  homepage = "https://blog.jbrosi.ch"
+  repo = "https://github.com/jbrosi/hugo-casper-two"
+
+[original]
   name = "Eueung Mulyana"
   homepage = "https://www.telematika.org/"
+  repo = "https://github.com/eueung/hugo-casper-two"
 
 [original]
   name = "Casper"
