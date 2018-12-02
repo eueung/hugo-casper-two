@@ -4,7 +4,7 @@
     </header>
     {{if .Params.image}}
     <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
-    </figure>{{else}}
+    </figure>{{else if or .Site.Params.randomFallbackImagesPage .Params.randomFallbackImage}}
     <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
     </figure>{{end}}
 
