@@ -22,7 +22,7 @@
       <section class="author-card">
         <img class="author-profile-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar) | absURL}}" alt="Author" />
         <section class="author-card-content">
-            <h4 class="author-card-name"><a href="{{"/" | absURL}}">{{.Params.author | default .Site.Params.author}}</a></h4>
+            <h4 class="author-card-name"><a href="{{ (.Params.authorURLInternal | default .Site.Params.authorURLInternal) | absURL}}">{{.Params.author | default .Site.Params.author}}</a></h4>
                 <p>{{.Params.authorDescription | default .Site.Params.authorDescription}}</p>
         </section>
       </section>
