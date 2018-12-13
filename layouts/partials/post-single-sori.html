@@ -7,10 +7,10 @@
         <h1 class="post-full-title">{{.Title}}</h1>
     </header>
     {{if .Params.image}}
-    <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
-    </figure>{{else if or .Site.Params.randomFallbackImagesPage .Params.randomFallbackImage}}
-    <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
-    </figure>{{end}}
+    <div class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
+    </div>{{else if or .Site.Params.randomFallbackImagesPage .Params.randomFallbackImage}}
+    <div class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
+    </div>{{end}}
 
     <section class="post-full-content">
         <div class="kg-card-markdown">

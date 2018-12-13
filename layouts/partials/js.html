@@ -13,3 +13,12 @@
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 {{ end }}
+
+<!-- Load PhotoSwipe js if the load-photoswipe shortcode has been used -->
+{{ if ($.Scratch.Get "photoswipeloaded") }}
+<script src="/js/load-photoswipe.js"></script>
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+{{ end }}
+
+
