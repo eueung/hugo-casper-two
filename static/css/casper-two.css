@@ -50,6 +50,11 @@
 .floating-header-title {
     font-weight: 500;
 }
+
+.floating-active {
+    padding: 0 2em;
+}
+
 .post-full-meta {
     font-weight: 500;
 }
