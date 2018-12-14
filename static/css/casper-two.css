@@ -44,6 +44,16 @@
     color: yellow;
 }
 
+.floating-header-logo > a {
+    font-weight: 400;
+}
+.floating-header-title {
+    font-weight: 500;
+}
+.post-full-meta {
+    font-weight: 500;
+}
+
 @media (min-width: 900px) {
     .ctsingle .post-feed {
         margin-top: -70px;
