@@ -61,6 +61,7 @@ Transition styles
     flex: none;
     display: block;
     overflow: visible;
+    min-height: auto;
 }
 
 /*
@@ -73,6 +74,11 @@ figure {
     position:relative; /* purely to allow absolution positioning of figcaption */
     overflow: hidden;
 }
+
+.box > figure > .img > img {
+    max-width: 100%;
+}
+
 .gallery figure {
     position: absolute;
     left: 5px;
