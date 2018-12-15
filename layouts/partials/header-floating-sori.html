@@ -1,11 +1,8 @@
 <div class="floating-header">
-  <div class="floating-header-title">{{.Title}}</div>
   <div class="floating-header-logo">
     {{ if .Site.Params.logo }}<a href="{{"/" | absURL}}"><img src="{{ .Site.Params.logo  | absURL}}" alt="{{.Site.Title}}" /></a>{{end}}
   </div>
-  <div class="floating-header-title">
-    {{.Title}}
-  </div>
+  <div class="floating-header-title">{{.Title}}</div>
   <progress class="progress" value="0">
     <div class="progress-container">
       <span class="progress-bar"></span>
