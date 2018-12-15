@@ -43,6 +43,33 @@
 .nav-current a:visited {
     color: yellow;
 }
+.floating-header {
+    background-color: rgba(0,0,0,0.9);
+
+}
+.floating-header-logo > a {
+    font-weight: 400;
+    color: #fff;
+}
+.floating-header-title {
+    font-weight: 500;
+    color: #fff;
+}
+
+.floating-active {
+    padding: 0 2em;
+}
+
+.cc-floating.cc-theme-classic {
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
+    border-radius: 5px;
+}
+.cc-revoke {
+    display: none !important;
+}
+.post-full-meta {
+    font-weight: 500;
+}
 
 @media (min-width: 900px) {
     .ctsingle .post-feed {
