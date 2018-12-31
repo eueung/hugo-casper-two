@@ -54,6 +54,7 @@
 .floating-header-title {
     font-weight: 500;
     color: #fff;
+    visibility: visible !important;
 }
 
 .floating-active {
