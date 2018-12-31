@@ -30,6 +30,7 @@
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 
     <link rel="stylesheet" type="text/css" href="{{ "css/casper-two.css" | absURL}}" /> 
+    <link rel="stylesheet" type="text/css" href="{{ "css/fontawesome.all.min.css" | absURL}}" />
     <link rel="stylesheet" href="{{ "css/highlight-monokai.css" | absURL}}" />
     {{ range .Site.Params.customCSS }} <link rel="stylesheet" href="{{ . | absURL }}" /> {{ end }}
 
