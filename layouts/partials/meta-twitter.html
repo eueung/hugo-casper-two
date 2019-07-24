@@ -11,5 +11,5 @@
 {{ end }} <!-- Twitter Card data -->
     <meta name="twitter:title" content="{{ .Title }}"/>
     <meta name="twitter:description" content="{{if .IsPage}}{{ .Description | default (substr .Summary 0 160) }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
-    <meta name="twitter:url" content="{{.URL | absURL}}" />
+    <meta name="twitter:url" content="{{.Permalink | absURL}}" />
     <meta name="twitter:site" content="@{{ .Site.Params.twitterName }}"/>
