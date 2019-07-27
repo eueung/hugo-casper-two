@@ -2,7 +2,7 @@
 
 {{if ne .Site.Params.singleViewStyle "casper"}}<body class="ctsingle">
 {{else}}<body class="post-template">{{end}}
-  <div class="site-wrapper"> 
+  <div class="site-wrapper">
 
 {{if ne .Site.Params.singleViewStyle "casper"}}{{ partial "header" . }}
 {{else}}{{ partial "header-sori" . }}{{end}}
@@ -27,7 +27,7 @@
     {{else}}
       {{ partial "post-single-sori" . }}
     {{end}}
-    
+
     {{ partial "disqus" . }}
   </div>
 </main>
@@ -35,7 +35,7 @@
 {{if eq .Site.Params.singleViewStyle "casper"}}
 <aside class="read-next outer">
   <div class="inner">
-    <div class="read-next-feed">      
+    <div class="read-next-feed">
       {{ partial "readnext-random-sori" . }}
       {{with .NextInSection}}
       {{ partial "readnext-article-sori" . }}

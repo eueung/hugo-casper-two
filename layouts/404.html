@@ -4,7 +4,7 @@
   <body class="error-template"><div class="site-wrapper">
   {{ partial "header-sori-error" . }}
 {{else}}
-  <body class="home-template"><div class="site-wrapper"> 
+  <body class="home-template"><div class="site-wrapper">
   {{ partial "header" . }}
 {{end}}
 
@@ -13,10 +13,10 @@
 
 {{if ne .Site.Params.singleViewStyle "casper"}}
 <div class="post-feed">
-<article class="post-card post"> 
+<article class="post-card post">
     <a class="post-card-image-link" href="{{ .Permalink }}">
       <div class="post-card-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
-    </a>    
+    </a>
 
     <div class="post-card-content">
       <a class="post-card-content-link" href="#">
@@ -25,10 +25,10 @@
           </header>
       </a>
       <section class="post-card-excerpt" style="padding: 0 25px;">
-          
+
       </section>
     </div>
-</article>    
+</article>
 </div>
 {{else}}
   <section class="error-message">
@@ -36,7 +36,7 @@
     <p class="error-description">{{ .Site.Params.pageNotFoundTitle }}</p>
     <a class="error-link" href="{{"/"|absURL}}">Go to the front page →</a>
   </section>
-{{end}}    
+{{end}}
 
   </div>
 </main>
