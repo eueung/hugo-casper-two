@@ -17,7 +17,7 @@ min_version=0.31
   homepage = "https://www.telematika.org/"
   repo = "https://github.com/eueung/hugo-casper-two"
 
-[original]
+[original2]
   name = "Casper"
   homepage = "https://github.com/TryGhost/Casper"
   repo = "https://github.com/TryGhost/Casper"
