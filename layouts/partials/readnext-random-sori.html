@@ -1,4 +1,4 @@
-{{ $posts := (where .Site.RegularPages "Section" "==" "post") }}{{ $postCount := len $posts }}{{if ge $postCount 4}}{{ $currentPage := . }}
+{{ $posts := .Site.RegularPages }}{{ $postCount := len $posts }}{{if ge $postCount 4}}{{ $currentPage := . }}
 <article class="read-next-card" {{if .Site.Params.cover}}
             style="background-image: url({{.Site.Params.cover | absURL}});" {{else}}style="background-color: #090a0b;"{{end}}>
     <header class="read-next-card-header">
