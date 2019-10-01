@@ -1,0 +1,55 @@
+{{ partial "head" . }}
+
+{{if eq .Site.Params.singleViewStyle "casper"}}
+  <body class="error-template"><div class="site-wrapper">
+  {{ partial "header-sori-error" . }}
+{{else}}
+  <body class="home-template"><div class="site-wrapper"> 
+  {{ partial "header" . }}
+{{end}}
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+
+{{if ne .Site.Params.singleViewStyle "casper"}}
+<div class="post-feed">
+<article class="post-card post"> 
+    <a class="post-card-image-link" href="{{ .Permalink }}">
+      <div class="post-card-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)"></div>
+    </a>    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="#">
+          <header class="post-card-header">
+              <h2 class="post-card-title">{{ .Site.Params.pageNotFoundTitle }}</h2>
+          </header>
+      </a>
+      <section class="post-card-excerpt" style="padding: 0 25px;">
+          
+      </section>
+    </div>
+</article>    
+</div>
+{{else}}
+  <section class="error-message">
+    <h1 class="error-code">404</h1>
+    <p class="error-description">{{ .Site.Params.pageNotFoundTitle }}</p>
+    <a class="error-link" href="{{"/"|absURL}}">Go to the front page →</a>
+  </section>
+{{end}}    
+
+  </div>
+</main>
+
+{{if eq .Site.Params.singleViewStyle "casper"}}
+<aside class="outer">
+  <div class="inner">
+    <div class="post-feed">
+      {{ partial "post-list-term" . }}
+    </div>
+  </div>
+</aside>
+{{end}}
+
+{{ partial "footer" . }}
+</div>{{ partial "js" . }}</body></html>

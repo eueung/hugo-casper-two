@@ -1,0 +1,57 @@
+{{ partial "head" . }}
+
+{{if ne .Site.Params.singleViewStyle "casper"}}<body class="ctsingle">
+{{else}}<body class="post-template">{{end}}
+  <div class="site-wrapper"> 
+
+{{if ne .Site.Params.singleViewStyle "casper"}}{{ partial "header" . }}
+{{else}}{{ partial "header-sori" . }}{{end}}
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    {{if ne .Site.Params.singleViewStyle "casper"}}
+    <div class="post-feed">
+      {{ partial "post-single" . }}
+    </div>
+
+    <nav class="pagination" role="navigation">
+      {{if .NextInSection}}
+          <a class="newer-posts" href="{{ .NextInSection.RelPermalink }}">&larr; <span class="hide">Next Post</span></a>
+      {{end}}
+      <span class="page-number">&nbsp;</span>
+      {{if .PrevInSection}}
+          <a class="older-posts" href="{{ .PrevInSection.RelPermalink }}"><span class="hide">Previous Post</span> &rarr;</a>
+      {{end}}
+    </nav>
+
+    {{else}}
+      {{ partial "post-single-sori" . }}
+    {{end}}
+    
+    {{ partial "disqus" . }}
+  </div>
+</main>
+
+{{if eq .Site.Params.singleViewStyle "casper"}}
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      {{ partial "readnext-random-sori" . }}
+      {{with .NextInSection}}
+      {{ partial "readnext-article-sori" . }}
+      {{end}}
+      {{with .PrevInSection}}
+      {{ partial "readnext-article-sori" . }}
+      {{end}}
+    </div>
+  </div>
+</aside>
+
+{{ partial "header-floating-sori" . }}
+{{end}}
+
+{{ partial "footer" . }}
+</div>
+{{ partial "js" . }}
+{{if eq .Site.Params.singleViewStyle "casper"}}{{ partial "js-sori" . }}{{end}}
+</body></html>
