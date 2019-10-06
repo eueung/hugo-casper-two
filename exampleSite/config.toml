@@ -43,6 +43,13 @@ canonifyurls    = true
   #casper or caspertwo
   singleViewStyle = "casper"
 
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
+
 [permalinks]
   post = "/post/:slug/"
 
