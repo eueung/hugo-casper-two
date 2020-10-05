@@ -24,6 +24,7 @@ canonifyurls    = true
   linkedinName = "eueung"
   mediumName = ""
   igName = ""
+  pinName = ""
 
   logo = "hugo-logo.png"
   orgName = "EM"
