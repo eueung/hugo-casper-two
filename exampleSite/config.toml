@@ -23,6 +23,8 @@ canonifyurls    = true
   githubName = "eueung"
   linkedinName = "eueung"
   mediumName = ""
+  igName = ""
+  pinName = ""
 
   logo = "hugo-logo.png"
   orgName = "EM"
@@ -41,6 +43,13 @@ canonifyurls    = true
 
   #casper or caspertwo
   singleViewStyle = "casper"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
 
 [permalinks]
   post = "/post/:slug/"
