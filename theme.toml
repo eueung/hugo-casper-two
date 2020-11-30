@@ -9,7 +9,7 @@ min_version=0.31
 
 [author]
   name = "Johannes Brosi"
-  homepage = "https://blog.jbrosi.ch"
+  homepage = "https://blog.jbrosi.dev"
   repo = "https://github.com/jbrosi/hugo-casper-two"
 
 [original]
