@@ -25,7 +25,7 @@
     {{ partial "meta-twitter" . }}
     {{ partial "meta-facebook" . }}
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 
@@ -34,6 +34,6 @@
     <link rel="stylesheet" href="{{ "css/highlight-monokai.css" | absURL}}" />
     {{ range .Site.Params.customCSS }} <link rel="stylesheet" href="{{ . | absURL }}" /> {{ end }}
 
-    {{ if .Site.Params.RSSLink}}<link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{else}}{{ if eq .URL "/" }}<link href="{{ "index.xml" | absURL}}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }} {{ end }}
+    {{ if .Site.Params.RSSLink}}<link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{else}}{{ if eq .Permalink "/" }}<link href="{{ "index.xml" | absURL}}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> {{ end }} {{ end }}
 
 </head>
